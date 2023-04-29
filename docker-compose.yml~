@@ -1,0 +1,63 @@
+version: '1'
+
+services:
+  quick_imgpro_app:
+    container_name: quick_imgpro_container
+    restart: always
+    #build: ./quick_imgpro_app
+    image: hemanthkumar5498/quick_imgpro:v1.1
+    deploy:
+      mode: replicated
+      resources:
+        limits:
+          cpus: '0.50'
+          #memory: 50M
+        reservations:
+          cpus: '0.25'
+          #memory: 20M
+    
+  quality_analysis_app:
+    container_name: quality_analysis_container
+    restart: always
+    #build: ./quality_analysis_app
+    image: hemanthkumar5498/quality_analysis:v1.1
+    deploy:
+      mode: replicated
+      resources:
+        limits:
+          cpus: '0.50'
+          #memory: 50M
+        reservations:
+          cpus: '0.25'
+          #memory: 20M
+
+  3_52_0_0_soyabean_yolov7_app:
+    container_name: 3_52_0_0_soyabean_yolov7
+    restart: always
+    #build: ./3_52_0_0_soyabean_yolov7_app
+    image: hemanthkumar5498/3_52_0_0_soyabean_yolov7:v1.1
+    deploy:
+      mode: replicated
+      resources:
+        limits:
+          cpus: '0.50'
+          #memory: 50M
+        reservations:
+          cpus: '0.25'
+          #memory: 20M
+              
+  nginx:
+    container_name: nginx
+    restart: always
+    #build: ./nginx
+    image: hemanthkumar5498/ngnix_proxy:v1.1
+    ports:
+      - "0.0.0.0:80:80"
+    deploy:
+      mode: global
+    links:
+      - quick_imgpro_app
+      - quality_analysis_app
+    depends_on:
+      - quick_imgpro_app
+      - quality_analysis_app

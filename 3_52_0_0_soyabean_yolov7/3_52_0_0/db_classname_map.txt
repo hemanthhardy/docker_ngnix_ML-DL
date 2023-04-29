@@ -1,0 +1,7 @@
+4,good
+16,admixture
+1,damaged_seed
+2,discolored_pink
+10,green_seeds
+5,split_seeds
+3,foreign_matter
