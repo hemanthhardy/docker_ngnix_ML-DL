@@ -18,4 +18,3 @@ Size, Quality, Approximate weight percent.
 
 ![QA131023011_sample](https://github.com/hemanthhardy/docker_ngnix_ML-DL/assets/28312002/8d22aa24-cee7-4a65-8c68-e84374b6efcc)
 ![QA161023006_L (1)](https://github.com/hemanthhardy/docker_ngnix_ML-DL/assets/28312002/50c85bf7-333e-45a9-97d3-b8a18ba688d3)
-![QA161023006_L](https://github.com/hemanthhardy/docker_ngnix_ML-DL/assets/28312002/05a5a91d-8c6e-4550-ad37-45ec29004c73)
