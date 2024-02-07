@@ -1,4 +1,4 @@
-![702_11](https://github.com/hemanthhardy/docker_ngnix_ML-DL/assets/28312002/c7ce5307-0875-4a15-bc90-b7a812a61721)# iGrade Mobile Application: 
+# iGrade Mobile Application: 
 Online AI based Mobile application for supporting Commodity Price Grading for Field Executive, farmers, and other agri-based people.
 
 # Grains Quality detection using Custum YOLOv7 / Efficient-Det7 :  Sample Auto Deployment in DockerSwarm
