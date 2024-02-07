@@ -6,3 +6,4 @@ Online AI based Mobile application for supporting Commodity Price Grading for Fi
 
 Estimates : 
 Size, Quality, Approximate weight percent.
+[Uploading Igrade_Reports_SB010224003.pdf…]()
